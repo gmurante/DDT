@@ -1,0 +1,44 @@
+%InitCondFile            	./GA0.IC.gas
+InitCondFile            	./snap_le_134
+OutputDir               	.
+
+SnapshotFileBase        	snap
+
+InfoFile          		info.txt
+CpuFile           		cpu.txt
+
+BoxSize               		479000.0
+PeriodicBoundariesOn   		0
+
+MaxMemSize       		3400
+
+% System of units
+
+UnitLength_in_cm       		3.085678e21        ;  1.0 kpc /h
+UnitMass_in_g          		1.989e43           ;  solar masses
+UnitVelocity_in_cm_per_s	1e5                ;  1 km/sec
+GravityConstantInternal  	0
+
+
+ComovingIntegrationOn 		0
+ICFormat              		2
+TimeLimitCPU      		83000
+
+
+PartAllocFactor       		15
+BufferSize              	100
+
+SofteningGas                    9.1   
+SofteningHalo                   9.1    % high-res particles
+SofteningDisk                   19.6  % low-res particles boundary 1
+SofteningBulge                  322.0  % low-res boundary 2
+SofteningStars                  9.1
+SofteningBndry                  0
+
+SofteningGasMaxPhys             1.3
+SofteningHaloMaxPhys            1.3
+SofteningDiskMaxPhys            2.8
+SofteningBulgeMaxPhys           46.0
+SofteningStarsMaxPhys           1.3
+SofteningBndryMaxPhys           0
+

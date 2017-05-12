@@ -1,0 +1,6 @@
+
+gadgetconfig.h:  $(CONFIG)
+	$(PERL) prepare-config.perl $(CONFIG)
+
+complile_time_info.c: $(CONFIG)
+	$(PERL) prepare-config.perl $(CONFIG)
